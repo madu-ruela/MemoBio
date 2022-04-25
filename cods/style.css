@@ -368,9 +368,35 @@ main > section {
 	color: #00ff88;
 }
 
-.formCadastro .formContainer .dadosPessoais.active, .formCadastro .formContainer .dadosEndereco.active {
+.formCadastro .formContainer .dadosPessoais.active, .formCadastro .formContainer .dadosEndereco.active,
+.formCadastro .formContainer .dadosPagamento.active{
 	display: initial;
 }
+
+/* botões de pagamento */
+.dadosPagamento section div{
+    border: solid 2px #00ff88;
+    border-radius: 15px;
+    width: 120px;
+    height: 80px;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.dadosPagamento section div h2{
+    margin: auto;
+}
+
+.dadosPagamento section div.active{
+    background-color: #00ff88;
+    transition: all 0.3s;
+}
+.formCadastro .formContainer form .dadosPagamento .formBoleto:not(.active),
+.formCadastro .formContainer form .dadosPagamento .formPix:not(.active),
+.formCadastro .formContainer form .dadosPagamento .formCredito:not(.active){
+    display: none;
+}
+
 
 @media (max-width: 1200px){
 	.formCadastro .formContainer form div section{
