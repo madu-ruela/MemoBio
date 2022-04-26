@@ -287,9 +287,15 @@ main > section {
 .login form div{
 	display: flex;
 	justify-content: center;
+	gap: 50px;
 }
 .login form label{
 	margin-left: 15px;
+}
+.login form .link{
+	color: #fff;
+	font-size: 0.7em;
+	margin-bottom: 10px;
 }
 
 @media (max-width: 800px){
@@ -374,7 +380,7 @@ main > section {
 }
 
 /* botões de pagamento */
-.dadosPagamento section div{
+.dadosPagamento .btnsPagamento div{
     border: solid 2px #00ff88;
     border-radius: 15px;
     width: 120px;
@@ -383,11 +389,11 @@ main > section {
     margin-top: 15px;
     cursor: pointer;
 }
-.dadosPagamento section div h2{
+.dadosPagamento div h2{
     margin: auto;
 }
 
-.dadosPagamento section div.active{
+.dadosPagamento .btnsPagamento div.active{
     background-color: #00ff88;
     transition: all 0.3s;
 }
@@ -396,7 +402,22 @@ main > section {
 .formCadastro .formContainer form .dadosPagamento .formCredito:not(.active){
     display: none;
 }
-
+.dadosPagamento .formCredito{
+	margin-top: 20px;
+}
+.dadosPagamento .formCredito .divPagamentoCredito{
+	display: flex;
+	justify-content: space-between;
+}
+.formCadastro .formContainer form .btnConfirmar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.formCadastro .formContainer form .btnConfirmar button{
+	width: 120px;
+	margin-top: 20px;
+}
 
 @media (max-width: 1200px){
 	.formCadastro .formContainer form div section{
