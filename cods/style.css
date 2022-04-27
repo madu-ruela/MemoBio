@@ -55,10 +55,12 @@ header nav ul li a {
 	transition: all 0.3s;
 	border-radius: 10px;
 	padding: 5px;
+	transition: all 0.7s;
 }
 
 header nav ul li a:hover {
 	background-color: #00ff88;
+	transition: all 0.7s;
 }
 
 button {
@@ -221,16 +223,44 @@ main > section {
 	color: #fff
 }
 .carrosel{
+	width: 100%;
+	height:  250px;
 	display: flex;
 	justify-content: center;
 	gap: 20px;
+	position: relative;
 }
+
 .carrosel div{
 	border: 2px solid #00ff88;
 	border-radius: 10px;
 	padding: 10px;
-	width: 240px;
+	width: calc(100%/4);
+	position: absolute;
+	height: 230px;
+	display: none;
+
 }
+.carrosel div.past {
+	left: 0;
+	border: 1px solid red;
+	display: initial;
+}
+
+.carrosel div.current {
+	left: 50%;
+	border: 1px solid blue;
+	display: initial;
+	transform: translateX(-50%);
+}
+
+.carrosel div.current + div   {
+	left: 100%;
+	border: 1px solid green;
+	display: initial;
+	transform: translateX(-100%);
+}
+
 .carrosel div img{
 	width: 100px;
 	border-radius: 50%;
@@ -240,7 +270,24 @@ main > section {
 	word-break: break-all;
 }
 
-
+/* Teste de Carrosel */
+.testeDepoimentos{
+	width: 100%;
+	height: 350px;
+	display: flex;
+	align-items: center;
+}
+.testeCarrosel{
+	display: flex;
+	width: 1060px;
+	gap: 20px;
+}
+.testeCarrosel div{
+	width: 250px;
+	border: 2px solid yellow;
+	border-radius: 15px;
+	padding: 10px;
+}
 
 
 /* Login Page */
