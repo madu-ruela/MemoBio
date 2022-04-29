@@ -12,36 +12,36 @@ const card = `
 
 const arrayDeExibicao = [];
 for (let i = 0; i < 4; i++) {
-  arrayDeExibicao.push(card);
+    arrayDeExibicao.push(card);
 }
 
 function exibir() {
-  container.innerHTML = "";
-  if (prox < 0) {
-    prox = 0;
-    container.innerHTML += arrayDeExibicao[prox];
-    return;
-  }
-  if (prox > arrayDeExibicao.length - 1) {
-    prox = arrayDeExibicao.length - 1;
-    container.innerHTML += arrayDeExibicao[prox];
-    return;
-  }
-  //   container.innerHTML = arrayDeExibicao[prox];
-  const arrayDeExibicaoAtual = arrayDeExibicao.slice(prox, prox + 3);
-  arrayDeExibicaoAtual.forEach((item) => {
-    container.innerHTML += item;
-  });
+    container.innerHTML = "";
+    if (prox < 0) {
+        prox = 0;
+        container.innerHTML += arrayDeExibicao[prox];
+        return;
+    }
+    if (prox > arrayDeExibicao.length - 1) {
+        prox = arrayDeExibicao.length - 1;
+        container.innerHTML += arrayDeExibicao[prox];
+        return;
+    }
+    //   container.innerHTML = arrayDeExibicao[prox];
+    const arrayDeExibicaoAtual = arrayDeExibicao.slice(prox, prox + 3);
+    arrayDeExibicaoAtual.forEach((item) => {
+        container.innerHTML += item;
+    });
 }
 
 btnAnterior.addEventListener("click", () => {
-  prox--;
-  exibir();
+    prox--;
+    exibir();
 });
 
 btnProximo.addEventListener("click", () => {
-  prox++;
-  exibir();
+    prox++;
+    exibir();
 });
 
 exibir();
