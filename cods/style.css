@@ -274,10 +274,6 @@ main > section {
   border-radius: 50%;
 }
 
-.testeCarrosel div:nth-child(2n + 1) {
-  border: 2px solid red;
-}
-
 #depoimentos .carrosel p {
   word-break: break-all;
 }
