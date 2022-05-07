@@ -7,11 +7,13 @@
 }
 .menuUsuario{
 	background-color: #2B2637;
-	width: 250px;
-	height: 100vh;
+	max-width: 250px;
+	min-height: 100vh;
+	width: 100%;
 	position: relative;
 	padding: 20px;
-		transition: all .3s ease;
+	transition: all .3s ease;
+	overflow: auto;
 
 }
 .usuario{
@@ -159,17 +161,49 @@
 }
 
 
-/* page de perguntas */
+/* page ADM */
 
-.conteudoPage{
-	width: 100%;
-	height: 100vh;
+.containers{
+	padding: 30px;
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap:30px;
 }
-.pergunta{
-	border: 2px solid #00ff88;
-	border-radius: 10px;
-	width: 80%;
-	height: 70%;
+.Ncadastrados, .Nperguntas{
+	border: #00ff88 2px solid;
+	border-radius: 15px;
+	width: 230px;
+	height: 150px;
+	text-align: center;
+	}
+.Ncadastrados h1, .Nperguntas h1{
+	margin-top: 10px;
+	font-size: 4em;
+}
+.graficoPlanos{
+	background-color: #2B2637;
+	min-width: 510px;
+	height: 200px;
+	border-radius: 15px;
+	padding: 5px;
+}
+.tabelaUltimosCadastros{
+	background-color: #2B2637;
+	min-width: 700px;
+	height: 300px;
+	border-radius: 15px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+}
+tr{
+	display: flex;
+	gap:20px;
+}
+.graficoDificuldades{
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	background-color: #2B2637;
 }

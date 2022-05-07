@@ -1,8 +1,21 @@
+
+.conteudoPergunta{
+	padding: 30px;	
+}
 .containerPergunta{
     width: 60vw;
     border: #00ff88 2px solid;
     border-radius: 15px;
-    padding: 20px;
+    padding: 20px 30px;
+    margin: 0 auto;
+}
+.tituloPergunta{
+	text-align: center;
+	margin-bottom: 20px;
+	color: #00ff88;	
+}
+.textoPergunta{
+	margin-top: 10px;
 }
 .btnsAP{
     display: flex;
@@ -11,7 +24,29 @@
 }
 .imgPergunta{
     text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 .imgPergunta img{
     width: 50%;
+}
+.alternativasPergunta{
+	margin-top: 15px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+.btnAnt{
+	color: #00ff88;
+}
+.btnAterior{
+	border: solid 2px #201b2c;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.btnAterior:hover{
+	border: solid 2px #00ff88;
 }
