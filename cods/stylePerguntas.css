@@ -50,3 +50,31 @@
 .btnAterior:hover{
 	border: solid 2px #00ff88;
 }
+
+/* Page Listas */
+.headerListaPerguntas{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.headerListaPerguntas div{
+	display: flex;
+	align-items: center;
+	gap:20px;
+}
+.containerLista{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 60vw;
+    border: #00ff88 2px solid;
+    border-radius: 15px;
+    padding: 20px 30px;
+    margin: 10px auto;
+}
+.containerLista div{
+	display: flex;
+	gap: 20px;
+}
