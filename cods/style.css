@@ -384,6 +384,70 @@ main > section {
   }
 }
 
+/* Page Recuperar Senha */
+.recSenha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+  gap: 6em;
+}
+
+.recSenha img {
+  width: 30%;
+}
+
+.recSenha form {
+  border: 2px solid #00ff88;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  color: #fff;
+}
+
+.recSenha form h1 {
+  text-align: center;
+  color: #00ff88;
+  margin-bottom: 20px;
+}
+
+.recSenha form input {
+  width: 350px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid #00ff88;
+  border-radius: 1em;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  color: #fff;
+  padding: 0px 10px;
+}
+
+.recSenha form div button {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recSenha form div {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.recSenha form label {
+  margin-left: 15px;
+}
+
+
+@media (max-width: 800px) {
+  .recSenha img {
+    display: none;
+  }
+}
+
 /* Page Cadastro */
 .formCadastro {
   width: 100vw;
